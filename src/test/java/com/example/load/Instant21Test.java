@@ -7,10 +7,10 @@ import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 
 @Execution(ExecutionMode.CONCURRENT)
-final class FiveSecondDelay05Test {
+final class Instant21Test {
 
     @TestFactory
-    Stream<DynamicTest> fiveSecondDelayTests() {
-        return LoadTestSupport.delayTests("fiveSecondDelay_", 2801, 3500, 5_000);
+    Stream<DynamicTest> instantTests() {
+        return LoadTestSupport.instantTests("instant_", 16000, 16799);
     }
 }

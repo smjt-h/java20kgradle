@@ -11,6 +11,6 @@ final class Instant03Test {
 
     @TestFactory
     Stream<DynamicTest> instantTests() {
-        return LoadTestSupport.instantTests("instant_", 3601, 5400);
+        return LoadTestSupport.instantTests("instant_", 1600, 2399);
     }
 }
